@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Counter Demo</string>
+    <string name="description">View the source code on GitHub. Choose About from the menu.</string>
+    <string name="file_error">Could not access the file with the counter value. %s</string>
+    <string name="reset_menu">Reset Counter</string>
+    <string name="about_menu">About</string>
+</resources>

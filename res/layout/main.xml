@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<!--
+		The current value of the counter is shown in a TextView at the top of the screen.
+		To get rounded corners, a background shape is referenced in the file
+		drawable/count_bkgnd.xml.
+	-->
+	<TextView android:id="@+id/count"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="50dip"
+		android:gravity="center_horizontal|center_vertical"
+		android:paddingTop="25dip"
+		android:paddingBottom="25dip"
+		android:text="0"
+		android:background="@drawable/count_bkgnd"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip"
+	/>
+	<!--
+		Below the counter value, an inner LinearLayout is used to show two buttons next 
+		to each other. The attribute onClick is used to map the touch of a button to a
+		function in the Activity class (inside MainActivity.java).
+	-->
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		<Button android:id="@+id/decrease"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:textSize="50dip"
+			android:gravity="center_horizontal|center_vertical"
+			android:paddingTop="25dip"
+			android:paddingBottom="25dip"
+			android:background="@drawable/decrease_bkgnd"
+			android:layout_marginRight="5dip"
+			android:text="-1"
+			android:onClick="onDecrease"
+		/>
+		<Button android:id="@+id/increase"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_weight="1" 
+			android:textSize="50dip"
+			android:gravity="center_horizontal|center_vertical"
+			android:paddingTop="25dip"
+			android:paddingBottom="25dip"
+			android:background="@drawable/increase_bkgnd"
+			android:layout_marginLeft="5dip"
+			android:text="+1"
+			android:onClick="onIncrease"
+		/>
+	</LinearLayout>
+	<!--
+		Finish with a help text. 
+	-->
+	<TextView android:id="@+id/info"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20dip"
+		android:padding="5dip"
+		android:text="@string/description"
+		android:textColor="#333333"
+		android:layout_marginTop="10dip"
+	/>
+</LinearLayout>
