@@ -53,6 +53,7 @@ public class MainActivity extends Activity {
             saveCount();
     	}
     	else {
+    		// Open browser with url to info about the application
 			Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("https://github.com/mikeplate/counter-android-demo"));
 			startActivity(browserIntent);
     	}
