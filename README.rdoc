@@ -1,0 +1,28 @@
+= Counter Android Demo
+
+== Overview
+
+This application is a demo of some very simple Android functionality. It can be used in courses teaching
+Android development to beginners.
+
+== Usage
+
+The applications keeps track of a single counter value. You could maybe use it to count people entering 
+a venue, where you need to know how many are inside. It has a Decrease (-1) and Increase (+1) button, 
+which changes the current counter value by one.
+
+There is also a menu with two options. Reset will set the counter back to zero and an About takes the 
+user to this web page on GitHub.
+
+== Features
+
+The application demonstrates the following features:
+
+- Layouts to build Android UI.
+- Automatic language selection of texts via xml files.
+- Changing the text of a TextView.
+- Responding to clicks on a Button.
+- Using drawables to customize the appearence of visual elements.
+- File handling, storing a binary integer in a file.
+- Respond to the menu button, show a menu and react to a selected menu option.
+- Show an alert with a message and a Yes/No choice.
