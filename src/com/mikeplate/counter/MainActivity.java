@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
         
         openCount();
-        _countView = (TextView)findViewById(R.id.count);
+        _countView = findViewById(R.id.count);
     	_countView.setText(Integer.toString(_count));
     }
     
